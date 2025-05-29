@@ -33,6 +33,6 @@ public class Highlight {
 	
 	public static void highLightElement(WebElement element){
    	   JavascriptExecutor js = (JavascriptExecutor)driver;  
-   	   js.executeScript("arguments[0].setAttribute('style','background: #fff3a1; border: 2px solid red;');", element);  
+   	   js.executeScript("arguments[0].setAttribute('style','background: #fff191; border: 2px solid red;');", element);  
    	 } 
 }
