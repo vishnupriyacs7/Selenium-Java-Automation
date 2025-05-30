@@ -66,7 +66,7 @@ public class FacebookRegistration {
 //		driver.findElement(By.xpath("//*[@class=\"_8esa\"]")).click();
 				
 		//list gender
-		List<WebElement>gender = driver.findElements(By.name("sex"));
+		List<WebElement>gender = driver.findElements(By.className("_58mt"));
 						
 		System.out.println("Available gender values:");
 		for (WebElement radioButton : gender) {
