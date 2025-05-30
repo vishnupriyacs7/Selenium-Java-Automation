@@ -38,7 +38,7 @@ public class FacebookRegistration {
 //
 //		
 		WebElement password = driver.findElement(By.name("reg_passwd__"));
-		password.sendKeys("vIshnupriyacs@2024");
+		password.sendKeys("vIshnupriyacs@2025");
 		Thread.sleep(1000);
 //		
 		//select day month year
