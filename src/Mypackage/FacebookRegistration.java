@@ -60,12 +60,12 @@ public class FacebookRegistration {
 		Thread.sleep(1000);
 		
 		Select year = new Select(driver.findElement(By.name("birthday_year")));
-		year.selectByIndex(3);
+		year.selectByIndex(20);
 		Thread.sleep(1000);
 		
 //		driver.findElement(By.xpath("//*[@class=\"_8esa\"]")).click();
 				
-		//list gender
+		//gender using label field
 		List<WebElement>gender = driver.findElements(By.className("_58mt"));
 						
 		System.out.println("Available gender values:");
@@ -73,7 +73,10 @@ public class FacebookRegistration {
 				// Get the value attribute of each radio button
 				String genderValue = radioButton.getText();
 				System.out.println(genderValue);
-				
+				if(genderValue.equalsIgnoreCase("Female")) {
+					radioButton.click();
+					break;
+				}
 				Thread.sleep(1000);
 		}
 			
