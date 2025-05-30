@@ -27,40 +27,37 @@ public class FacebookRegistration {
 		WebElement name = driver.findElement(By.name("firstname"));
 		name.sendKeys("Vishnupriya");
 		Thread.sleep(1000);
-//		
+		
 		WebElement surname = driver.findElement(By.name("lastname"));
 		surname.sendKeys("C S");
 		Thread.sleep(1000);
-//		
+		
 		WebElement mobEmail = driver.findElement(By.name("reg_email__"));
 		mobEmail.sendKeys("vishnupriyacs@gmail.com");
 		Thread.sleep(1000);
-//
-//		
+		
 		WebElement password = driver.findElement(By.name("reg_passwd__"));
 		password.sendKeys("vIshnupriyacs@2025");
 		Thread.sleep(1000);
-//		
+		
 		//select day month year
 		Select day = new Select(driver.findElement(By.name("birthday_day")));
 		day.selectByVisibleText("20");
 		Thread.sleep(1000);
 		System.out.println(day.isMultiple());
-		day.deselectByVisibleText("20");
-//		
+		
 		Select month = new Select(driver.findElement(By.name("birthday_month")));
-		List <WebElement> elementCount = month.getOptions();
-    	System.out.println(elementCount.size());
-//    	
+		List <WebElement> monthOptions= month.getOptions();
+    	System.out.println(monthOptions.size());
+    	
 //    	//for each loop
-//    	for(WebElement mon :elementCount ){
-//    	      String sValue = mon.getText();
-//    	      System.out.println(sValue);
-//    	}
+    	for(WebElement mon :monthOptions ){
+    	      String sValue = mon.getText();
+    	      System.out.println(sValue);
+    	}
 
-
-//		month.selectByValue("2");
-//		Thread.sleep(1000);
+		month.selectByValue("2");
+		Thread.sleep(1000);
 		
 		Select year = new Select(driver.findElement(By.name("birthday_year")));
 		year.selectByIndex(3);
