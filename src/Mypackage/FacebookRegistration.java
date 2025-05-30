@@ -77,7 +77,8 @@ public class FacebookRegistration {
 				Thread.sleep(1000);
 		}
 			
-
+		Thread.sleep(3000);
+		driver.quit();
 	}
 
 }
