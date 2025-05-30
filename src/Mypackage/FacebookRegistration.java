@@ -64,25 +64,19 @@ public class FacebookRegistration {
 		Thread.sleep(1000);
 		
 //		driver.findElement(By.xpath("//*[@class=\"_8esa\"]")).click();
-		
-		
+				
 		//list gender
-//				List<WebElement>gender = driver.findElements(By.name("sex"));
-//			
-//				
+		List<WebElement>gender = driver.findElements(By.name("sex"));
+						
+		System.out.println("Available gender values:");
+		for (WebElement radioButton : gender) {
+				// Get the value attribute of each radio button
+				String genderValue = radioButton.getText();
+				System.out.println(genderValue);
 				
-//				System.out.println("Available gender values:");
-//				for (WebElement radioButton : gender) {
-//					// Get the value attribute of each radio button
-//					String genderValue = radioButton.getAttribute("value");
-//					System.out.println(genderValue);
-//					Thread.sleep(1000);
-//				}
-//				
-//				
-
-				
-				
+				Thread.sleep(1000);
+		}
+			
 
 	}
 
