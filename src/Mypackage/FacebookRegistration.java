@@ -70,7 +70,7 @@ public class FacebookRegistration {
 						
 		System.out.println("Available gender values:");
 		for (WebElement radioButton : gender) {
-				// Get the value attribute of each radio button
+				// Get the value attribute of each radio button				
 				String genderValue = radioButton.getText();
 				System.out.println(genderValue);
 				if(genderValue.equalsIgnoreCase("Female")) {
