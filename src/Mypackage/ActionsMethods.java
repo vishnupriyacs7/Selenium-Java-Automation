@@ -41,6 +41,7 @@ public class ActionsMethods {
         
         action.keyDown(Keys.ENTER).perform();
         action.keyUp(Keys.ENTER).perform();
+        action.keyDown(Keys.ENTER);
         System.out.println("ENTER key pressed and released");
         
         Thread.sleep(2000);
