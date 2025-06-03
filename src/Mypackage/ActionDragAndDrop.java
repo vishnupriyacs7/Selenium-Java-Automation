@@ -23,16 +23,16 @@ public class ActionDragAndDrop {
         // Perform drag and drop
         Actions actions = new Actions(driver);
         Thread.sleep(3000);
-       // actions.dragAndDrop(draggable, droppable).perform();
+        actions.dragAndDrop(draggable, droppable).perform();
        
-        actions.dragAndDropBy(draggable, 80, 40).perform();
+//        actions.dragAndDropBy(draggable, 80, 40).perform();
 
         // Verify the drop
         String droppedText = droppable.getText();
         System.out.println("Droppable text after drop: " + droppedText);
 
         // Close the browser
-//        driver.quit();
+        driver.quit();
 
 	}
 }
