@@ -11,6 +11,7 @@ public class NavigationCommands {
 		Thread.sleep(2000);
 		driver.navigate().to("https://www.facebook.com/");
 		Thread.sleep(2000);
+		driver.navigate().to("https://www.google.com/");
 		
 		driver.navigate().back();
 		Thread.sleep(2000);
