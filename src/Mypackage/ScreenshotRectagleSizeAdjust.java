@@ -17,7 +17,7 @@ public class ScreenshotRectagleSizeAdjust {
 		// TODO Auto-generated method stub
 		
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://gspedia.com/projects/green");
+		driver.get("https://scopeindia.org/");
 		driver.manage().window().maximize();
 		
 //		Rectangle captureRect = new Rectangle(100, 100, 500, 300);
@@ -34,19 +34,19 @@ public class ScreenshotRectagleSizeAdjust {
         Thread.sleep(5000);
 
         // Take a screenshot of the entire page
-        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        // Read the screenshot as a BufferedImage
-        BufferedImage fullImg = ImageIO.read(screenshot);
-
-        // Crop the screenshot to a rectangle (x, y, width, height)
-        BufferedImage croppedImg = fullImg.getSubimage(100, 100, 500, 300);
-
-        // Save the cropped screenshot
-        File path = new File("C:\\Screenshot\\PartialScreenshot.png");
-        ImageIO.write(croppedImg, "png", path);
-
-        System.out.println("Cropped screenshot saved successfully!");
+//        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//
+//        // Read the screenshot as a BufferedImage
+//        BufferedImage fullImg = ImageIO.read(screenshot);
+//
+//        // Crop the screenshot to a rectangle (x, y, width, height)
+//        BufferedImage croppedImg = fullImg.getSubimage(100, 100, 500, 300);
+//
+//        // Save the cropped screenshot
+//        File path = new File("C:\\Screenshot\\PartialScreenshot.png");
+//        ImageIO.write(croppedImg, "png", path);
+//
+//        System.out.println("Cropped screenshot saved successfully!");
 
         // Close the browser
         driver.quit();
