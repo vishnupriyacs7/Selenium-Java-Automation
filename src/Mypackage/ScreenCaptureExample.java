@@ -11,17 +11,24 @@ import java.util.Date;
 
 import javax.imageio.ImageIO;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class ScreenCaptureExample {
 	public static void main(String[] args) {
+		
         try {
             // Create a Robot instance
             Robot robot = new Robot();
             // Capture the entire screen
             BufferedImage image = robot.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
+//            System.out.println("ss captured");
+//            ImageIO.write(image, "png", new File("C:\\Screenshots\\CurrentScreenshot.png"));
+//            System.out.println("ss saved");
             Date date = new Date();
             String imageName = "SCREENSHOT"+date.getTime()+".jpeg";
             // Specify the location to save the screenshot
-            File screenshotFile = new File("C:\\Screenshots\\"+imageName);
+            File screenshotFile = new File("C:\\AutomationRobot\\"+imageName);
             // Create the directory if it doesn't exist
             screenshotFile.getParentFile().mkdirs();
             // Write the image to the specified file
