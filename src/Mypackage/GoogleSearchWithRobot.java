@@ -34,7 +34,7 @@ public class GoogleSearchWithRobot {
             robot.keyRelease(KeyEvent.VK_ESCAPE);
 
             // Close the browser
-            driver.quit();
+            //driver.quit();
         } catch (AWTException | InterruptedException e) {
             e.printStackTrace();
         }
