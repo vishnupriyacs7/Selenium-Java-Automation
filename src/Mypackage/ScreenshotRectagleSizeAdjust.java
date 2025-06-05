@@ -1,6 +1,8 @@
 package Mypackage;
 
 import java.awt.AWTException;
+import java.awt.Rectangle;
+import java.awt.Robot;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -20,15 +22,16 @@ public class ScreenshotRectagleSizeAdjust {
 		driver.get("https://scopeindia.org/");
 		driver.manage().window().maximize();
 		
-//		Rectangle captureRect = new Rectangle(100, 100, 500, 300);
-//		Thread.sleep(5000);
-//        // Capture the screen area defined by the rectangle
-//        BufferedImage image = new Robot().createScreenCapture(captureRect);
-//        File path = new File("C:\\Screenshot\\PartialScreenshot.png");
-//        // Save the screenshot to a specific location
-//        ImageIO.write(image, "png", path);
-//
-//        System.out.println("Screenshot saved successfully!");
+		Rectangle captureRect = new Rectangle(50, 50, 800, 600);
+		Thread.sleep(5000);
+        // Capture the screen area defined by the rectangle
+        BufferedImage image = new Robot().createScreenCapture(captureRect);
+        File path = new File("C:\\Screenshot\\PartialScreenshot.png");
+        path.getParentFile().mkdirs();
+        // Save the screenshot to a specific location
+        ImageIO.write(image, "png", path);
+
+        System.out.println("Screenshot saved successfully!");
 		
 		// Wait for the page to load
         Thread.sleep(5000);
