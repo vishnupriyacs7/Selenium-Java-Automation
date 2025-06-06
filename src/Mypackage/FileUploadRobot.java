@@ -24,7 +24,6 @@ public class FileUploadRobot {
     	Robot robot = new Robot();
 
         String filePath = "C:\\Users\\HP\\Desktop\\upload.exe";
-       
         
         robot.delay(1000); 
 //        for (char c : filePath.toCharArray()) {
