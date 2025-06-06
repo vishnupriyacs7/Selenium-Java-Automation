@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FileUploadRobot {
-	public static void main(String[] args) throws AWTException {
+	public static void main(String[] args) throws AWTException, InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/upload/");
 		driver.manage().window().maximize();
@@ -23,7 +23,7 @@ public class FileUploadRobot {
  
     	Robot robot = new Robot();
 
-        String filePath = "C:\\Users\\HP\\Desktop\\abc.html";
+        String filePath = "C:\\Users\\HP\\Desktop\\upload.exe";
        
         
         robot.delay(1000); 
@@ -46,6 +46,8 @@ public class FileUploadRobot {
         //  Enter 
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
+        
+        Thread.sleep(2000);
         
         driver.findElement(By.id("terms")).click();
 
