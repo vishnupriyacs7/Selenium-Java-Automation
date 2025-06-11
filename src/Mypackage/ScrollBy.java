@@ -14,8 +14,8 @@ public class ScrollBy {
             driver.get("https://www.wikipedia.org/");
 
             // Optional: Wait for the page to load
-            Thread.sleep(2000); // wait for 2 seconds
-
+            Thread.sleep(2000); 
+            
             // Create an instance of JavascriptExecutor
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("window.scrollTo(0, document.body.scrollHeight)");  
@@ -23,14 +23,12 @@ public class ScrollBy {
             // Scroll horizontally by 1000 pixels
             //js.executeScript("window.scrollBy(0, 1000);");
 
-            // Optional: Wait to observe the result
-            Thread.sleep(2000); // wait for 2 seconds
+            Thread.sleep(2000); 
 
             // Scroll back to the left by 500 pixels
             //js.executeScript("window.scrollBy(0, -500);");
 
-            // Optional: Wait to observe the result
-            Thread.sleep(2000); // wait for 2 seconds
+            Thread.sleep(2000); 
 
         } catch (InterruptedException e) {
             e.printStackTrace();
