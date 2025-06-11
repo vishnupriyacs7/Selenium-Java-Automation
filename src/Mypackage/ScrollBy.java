@@ -18,15 +18,15 @@ public class ScrollBy {
             
             // Create an instance of JavascriptExecutor
             JavascriptExecutor js = (JavascriptExecutor) driver;
-//            js.executeScript("window.scrollTo(0, document.body.scrollHeight)");  
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight)");  
 
             // Scroll horizontally by 1000 pixels
-            js.executeScript("window.scrollBy(0, 1000);");
+//            js.executeScript("window.scrollBy(0, 1000);");
 
             Thread.sleep(2000); 
 
             // Scroll back to the left by 500 pixels
-            js.executeScript("window.scrollBy(0, -500);");
+//            js.executeScript("window.scrollBy(0, -200);");
 
             Thread.sleep(2000); 
 
