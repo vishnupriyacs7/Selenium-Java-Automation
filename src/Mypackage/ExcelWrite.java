@@ -24,10 +24,10 @@ public class ExcelWrite {
 		
 		XSSFRow row1 = sheet.getRow(9);
 		XSSFCell cell1 = row1.getCell(1);
-		cell1.setCellValue("newstudent");
+		cell1.setCellValue("Binoja");
 
 
-		cell1.setCellValue("vishnupriya c s");
+		cell.setCellValue("apache POI");
 		FileOutputStream fos = new FileOutputStream("C:\\Users\\HP\\Desktop\\halifax.xlsx");
 		workbook.write(fos);
 		fos.close();

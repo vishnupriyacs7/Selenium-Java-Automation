@@ -15,13 +15,13 @@ public class ExcelRead {
 		
 		FileInputStream fis = new FileInputStream("C:\\Users\\HP\\Desktop\\halifax.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		XSSFSheet sheet = workbook.getSheetAt(0);
+		XSSFSheet sheet = workbook.getSheet("homepage");
 		
-		XSSFRow row = sheet.getRow(0);
-		XSSFCell cell = row.getCell(0);
-		System.out.println(cell);
+//		XSSFRow row = sheet.getRow(0);
+//		XSSFCell cell = row.getCell(0);
+//		System.out.println(cell);
 
-		System.out.println(sheet.getRow(0).getCell(1));
+		System.out.println(sheet.getRow(7).getCell(1));
 	
 
 
